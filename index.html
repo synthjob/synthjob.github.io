@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halil Sak - Sosyal Medya Bağlantıları</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome için CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <div class="profile-image">
+                <img src="profile.png" alt="Halil" onerror="this.src='https://via.placeholder.com/120'">
+            </div>
+            <h1>SynthJob</h1>
+            <p class="bio">Canlı Yayıncı & İçerik Üretici</p>
+        </div>
+
+        <div class="links">
+            <a href="https://kick.com/synthjob" target="_blank" class="link-card kick">
+                <i class="fab fa-kickstarter-k"></i>
+                <span>Kick</span>
+            </a>
+            
+            <a href="https://www.youtube.com/@synthjob" target="_blank" class="link-card youtube">
+                <i class="fab fa-youtube"></i>
+                <span>YouTube</span>
+            </a>
+            
+            <a href="https://www.instagram.com/synthjob" target="_blank" class="link-card instagram">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/synthjob" target="_blank" class="link-card linkedin">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+        </div>
+
+        <div class="support">
+            <button class="support-link" onclick="showMessage()">
+                <i class="fas fa-heart"></i>
+                <span>Destekle</span>
+            </button>
+            <div id="message" class="message">
+                <p>Bağış mı? Gel sarılalım! <i class="fas fa-heart"></i></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showMessage() {
+            const message = document.getElementById('message');
+            message.style.display = 'block';
+            message.style.animation = 'fadeIn 0.5s ease-in';
+            
+            const button = document.querySelector('.support-link');
+            button.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
